@@ -1,4 +1,5 @@
 # ExServerTimings
+[![Build Status](https://travis-ci.org/ThomasBracher/ex_server_timings.svg?branch=master)](https://travis-ci.org/ThomasBracher/ex_server_timings)
 
 This package is a plug to put the http header [Server Timings](https://w3c.github.io/server-timing/)
 which allow to visualise the server performances in your browser. For more information, refer to
