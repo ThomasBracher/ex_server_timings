@@ -25,11 +25,6 @@ In your `lib/endpoint.ex` or in your `web/router.ex`, add the following line:
 plug ExServerTimings.Plug
 ```
 
-## Docs
-
-The docs can be found at [https://hexdocs.pm/ex_server_timings](https://hexdocs.pm/ex_server_timings).
-But i suggest you read the source code, it should be more updated and clearer.
-
 ## Todo
 
 [Specifications](https://w3c.github.io/server-timing/#cross-origin-resources) indicate that in case

@@ -1,7 +1,7 @@
 defmodule ExServerTimings.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -45,6 +45,6 @@ defmodule ExServerTimings.Mixfile do
   defp package do
     %{licenses: ["MIT"],
       maintainers: ["Thomas Bracher"],
-      links: %{"GitHub" => "https://github.com/BracherThomas/ex_server_timings"}}
+      links: %{"GitHub" => "https://github.com/ThomasBracher/ex_server_timings"}}
   end
 end
