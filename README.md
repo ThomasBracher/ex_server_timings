@@ -8,7 +8,7 @@ which allow to visualise the server performances in your browser. For more infor
 
 ## Installation
 
-The package is [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package is [available in Hex](https://hex.pm/packages/ex_server_timings), the package can be installed
 by adding `ex_server_timings` to your list of dependencies in `mix.exs`:
 
 ```elixir
