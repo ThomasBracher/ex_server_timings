@@ -21,6 +21,6 @@ defmodule ExServerTimingsTest do
     |> Plug.Conn.get_resp_header("server-timing")
     |> hd
 
-    assert Regex.match?(~r/cpu=0.0[0-9]+; "Server Time"/, timing_header)
+    assert Regex.match?(~r/cpu=[1-9][0-9]*; "Server Time"/, timing_header)
   end
 end
