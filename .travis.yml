@@ -8,4 +8,3 @@ matrix:
       otp_release: 18.1
 after_script:
   - mix deps.get --only docs
-
