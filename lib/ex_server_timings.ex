@@ -12,7 +12,7 @@ defmodule ExServerTimings.Plug do
 
     Conn.register_before_send(conn, fn conn ->
       stop = System.monotonic_time()
-      diff = System.convert_time_unit(stop - start, :native, :micro_seconds)
+      diff = System.convert_time_unit(stop - start, :native, :millisecond)
 
       Conn.put_resp_header(conn, "server-timing", "cpu=#{diff}; \"Server Time\"")
     end)
