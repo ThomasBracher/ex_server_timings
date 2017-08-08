@@ -18,7 +18,7 @@ defmodule ExServerTimingsTest do
   test "logs proper message to console" do
     timing_header = conn(:get, "/")
     |> MyPlug.call([])
-    |> Plug.Conn.get_resp_header("server-timings")
+    |> Plug.Conn.get_resp_header("server-timing")
     |> hd
 
     assert Regex.match?(~r/cpu=0.0[0-9]+; "Server Time"/, timing_header)

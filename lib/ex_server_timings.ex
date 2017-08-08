@@ -14,7 +14,7 @@ defmodule ExServerTimings.Plug do
       stop = System.monotonic_time()
       diff = System.convert_time_unit(stop - start, :native, :micro_seconds)
 
-      Conn.put_resp_header(conn, "server-timings", "cpu=#{formatted_diff(diff)}; \"Server Time\"")
+      Conn.put_resp_header(conn, "server-timing", "cpu=#{formatted_diff(diff)}; \"Server Time\"")
     end)
   end
 
